@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OttoKrause - SQP</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/orig-marca-otto-krause-1.svg" alt="logo">
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 >Explorador</h1>
+            <% for( let key in datos ) { %>
+                <article>
+                    <p class="key"><%= key %></p>
+                    <p><%= datos[key] %></p>
+                </article>
+            <% } %>
+        </section>
+    </main>
+    <footer>
+        <img src="img/electronica.png" alt="electro">
+        <img src="img/Logo.png" alt="logo">
+        <p>Copyright &copy; SQP - corporation </p>
+    </footer>
+</body>
+</html>
